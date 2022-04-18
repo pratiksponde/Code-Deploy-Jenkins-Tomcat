@@ -3,8 +3,6 @@ os: linux
 files:
   - source: /home/ubuntu/.jenkins/workspace/abc/webapp/target/webapp.war
     destination: /var/lib/tomcat8/webapps/testenv10.war
-  - source: /scripts/configure_http_port.xsl
-    destination: /tmp/codedeploy-deployment-staging-area/
 hooks:
   ApplicationStop:
     - location: scripts/stop_application
