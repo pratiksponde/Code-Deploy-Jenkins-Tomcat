@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /target/SampleMavenTomcatApp.war
-    destination: /tmp/codedeploy-deployment-staging-area/
+  - source: /home/ubuntu/.jenkins/workspace/abc/webapp/target/webapp.war
+    destination: /var/lib/tomcat8/webapps/testenv10.war
   - source: /scripts/configure_http_port.xsl
     destination: /tmp/codedeploy-deployment-staging-area/
 hooks:
